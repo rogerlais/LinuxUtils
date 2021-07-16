@@ -15,3 +15,5 @@ fi
 
 echo "Inserido ${grantUser} ao grupo de permissões para pastas compartilhados do VirtualBox"
 sudo adduser ${grantUser} vboxsf
+
+echo "RESTART DO COMPUTADOR NECESSÁRIO!!!!"

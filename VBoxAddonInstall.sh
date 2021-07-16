@@ -7,19 +7,23 @@ sudo apt upgrade
 #kernel headers para compilação dos módulos
 sudo apt install build-essential dkms linux-headers-$(uname -r)
 
-sudo rcvboxadd setup
+#caso haja problemas com o pacote linux-headers-$(uname -r)
+#Tente executar a linha abaixo
+sudo apt-get install linux-image-amd64 linux-headers-amd64
+
+#Modo alternativo
+sudo mkdir -p /mnt/cdrom
+sudo mount /dev/cdrom /mnt/cdrom
+cd /mnt/cdrom
+sudo sh ./VBoxLinuxAdditions.run --nox11
+
+#Geralmente inviavel abaixo
+#sudo rcvboxadd setup
 
 #Exibe se há addon instalado
 lsmod | grep vboxguest
 
 sudo /usr/sbin/VBoxService --version
-
-#Modo alternativo
-#sudo mkdir -p /mnt/cdrom
-#sudo mount /dev/cdrom /mnt/cdrom
-#cd /mnt/cdrom
-#sudo sh ./VBoxLinuxAdditions.run --nox11
-
 
 #!Insere a conta atual no grupo de montadores/RW 
 sudo usermod -aG vboxusers $USER
