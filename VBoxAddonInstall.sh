@@ -28,3 +28,6 @@ sudo /usr/sbin/VBoxService --version
 #!Insere a conta atual no grupo de montadores/RW 
 sudo usermod -aG vboxusers $USER
 sudo usermod -aG vboxsf $USER
+
+#todo: o link abaixo versa sobre o caso do kali-linux possuir diferencas
+#https://stackoverflow.com/questions/54336626/how-to-create-virtualbox-shared-folder-between-windows-host-and-ubuntu18-04-gues
