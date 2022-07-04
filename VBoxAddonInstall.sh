@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#todo: Tentar seguir passos listados em:
+# https://wiki.debian.org/VirtualBox 
+# De forma a ser mais genérico
+
 #atualiza o ambiente atual
 sudo apt update
 sudo apt upgrade
