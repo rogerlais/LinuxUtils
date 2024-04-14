@@ -1,5 +1,5 @@
 # LinuxUtils
-Small utilities to cotidian use
+Small utilities for cotidian use
 
 Basically shell scripts 
 
